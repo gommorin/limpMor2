@@ -14,15 +14,30 @@
 </head>
 
 <body>
-  <div class="container-fluid bg-primary" height="auto">
+  <div class="container-fluid" height="auto" id="allPage">
     <!-- TOP -->
-    <div class="row py-5" height="300px">
+    <div class="row pt-5" height="300px">
       <div class="container bg-warning" height="500px" width="900px">
         <div class="row">
           <!-- NAVBAR -->
           <div class="col-12 bg-success mb-4 py-4">
-            <nav height="200px">
-              NAV
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+              <a class="navbar-brand" href="/">
+                <img src="/svg/limpmor_logo-Oficial Letra Blanca.svg" alt="" width="150" height="auto">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i id="doubleArrow" class="fas fa-2x fa-angle-double-down"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="btn btn-primary" href="/servicios" role="button">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-primary" href="/nosotros" role="button">NOSOTROS</a>
+                  </li>
+                </div>
+              </div>
             </nav>
           </div>
           <!-- HEADER -->
@@ -36,11 +51,11 @@
         <div class="row mb-3 py-5">
           <div class="col-12">SECCIÓN PRINCIPAL</div>
         </div>
-        <!-- FOOTER -->
-        <div class="row">
-          <div class="col-12 bg-light">FOOTER</div>
-        </div>
       </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="col-12 bg-light">FOOTER</div>
     </div>
   </div>
 
