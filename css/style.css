@@ -120,7 +120,7 @@
   color: #59FF3F;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%)}
+.btn-grad {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
 .btn-grad {
   padding: 15px 0 15px 0;
   text-align: center;
@@ -134,17 +134,16 @@
  }
 
  .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
+  background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD  51%, #AAFFA9  100%);
+  background-position: left center; /* change the direction of the change here */
+  color: #211261;
+  text-decoration: none;
  }
- 
-
-
 
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* ----------------------------------- TABLET Y DESK ----------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
+
 
