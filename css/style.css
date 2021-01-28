@@ -198,6 +198,42 @@
   margin-left: 1.5rem;
 }
 
+#division {
+  position: relative;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#div-text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin:0;
+  padding:0;
+  color:white;
+  font-weight: 600;
+  z-index: 1;
+  opacity: 100%;
+}
+
+#bg-img-1 {
+  position:absolute;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding:0;
+  margin:0;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 60%;
+}
+
+
+
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 /* -------------------------------------- TABLET -------------------------------------- */
