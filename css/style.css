@@ -175,7 +175,7 @@
 }
 
 .grad-text {
-  background: -webkit-linear-gradient(-45deg, #211261, #1FA2FF, #11FFBD);
+  background: -webkit-linear-gradient(-45deg, #1FA2FF, #11FFBD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -223,7 +223,7 @@
   position:absolute;
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 240px;
   padding:0;
   margin:0;
   left: 0;
@@ -232,7 +232,25 @@
   opacity: 60%;
 }
 
+#covid-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: 0 2rem 3rem 2rem;
+  margin: 0;
+  color: #211261;
+}
 
+#main-title {
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -1px;
+  padding: 2rem 1rem;
+  margin: 0;
+  background-color: #160C40;
+  color: white;
+}
 
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
