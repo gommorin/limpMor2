@@ -67,6 +67,8 @@
   box-shadow: none;
 }
 
+/* ------------------------------ DROPDOWN ARROWS ------------------------------ */
+
 #doubleArrow {
   color: white;
 }
@@ -79,6 +81,8 @@
   outline: none !important;
   box-shadow: none;
 }
+
+/* ------------------------------ MENU COLLAPSE ------------------------------ */
 
 .navbar-collapse .navbar-nav {
   display: flex;
