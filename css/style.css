@@ -333,7 +333,7 @@
   color: white;
 }
 
-/* ------------------------------ SERVICES BLOCKS ------------------------------ */
+/* ------------------------------ SERVICES CARDS ------------------------------ */
 
 .services-section {
   position: relative;
@@ -342,31 +342,83 @@
 .service-block {
   width: 85%;
   height: auto;
-  box-shadow: 0px 0px 3rem 0px #d3d3d3;
+  /* box-shadow: 0px 0px 3rem 0px #d3d3d3; */
   border: none;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
   margin: 1em;
   padding: .5em;
-  /* background: linear-gradient(45deg, rgba(33, 18, 97, 1) 34%, rgba(48, 26, 142, 1) 45%, rgba(33, 92, 158, 1) 66%, rgba(34, 187, 237, 0.5) 100%); */
-  /* color: white; */
+}
+
+#serv1 {
+  background:
+    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    url("/img/limpiezas-moreira-limpieza-interioress-stock-k5x5.jpeg");
+  background-size: cover;
+}
+
+#serv2 {
+  background:
+    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    url("/img/limpiezas-moreira-limpieza-oficinas-stock-y6v1.jpeg");
+  background-size: cover;
+}
+
+#serv3 {
+  background:
+    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    url("/img/limpiezas-moreira-limpieza-vidrios-r2d9.jpeg");
+  background-size: cover;
+}
+
+#serv4 {
+  background:
+    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d1.jpeg");
+  background-size: cover;
+}
+
+#serv5 {
+  background:
+    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d4.jpeg");
+  background-size: cover;
+}
+
+#serv6 {
+  background:
+    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    url("/img/limpiezas-moreira-limpieza-obra-h9c2.jpeg");
+  background-size: cover;
+}
+
+.card {
+  height: 280px;
 }
 
 .card-body svg {
   width: 30%;
 }
 
+.card-body h4 {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  text-align:right;
+  color: white;
+}
+
 .card-fig {
   position: absolute;
   width: 50%;
   top: -60px;
-  left: -60px;
+  left: -100px;
   z-index: 0;
 }
 
 .card-text {
   color: #211261;
+  z-index:1;
 }
 
 .container-fig {
@@ -377,12 +429,49 @@
   z-index: 0;
 }
 
+/* ------------------------------ SERVICE MODAL ------------------------------ */
+
 .modal-header {
   background-color: #211261;
 }
 
+.modal-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-body #modal-body-1 {
+  height:280px;
+}
+
+.modal-body #modal-body-2,
+.modal-body #modal-body-5,
+.modal-body #modal-body-6 {
+  height:260px;
+}
+
+
+.modal-body #modal-body-3,
+.modal-body #modal-body-4 {
+  height:280px;
+}
+
 .close {
   color: white;
+}
+
+#modal-body-1 .service-icon {
+  position:absolute;
+  top:70px;
+  left:20px;
+  transform: scale(1.5);
+}
+
+.service-icon {
+  position:absolute;
+  top:25px;
+  left:20px;
+  transform: scale(1.5);
 }
 
 .lista-servicios {
@@ -393,7 +482,7 @@
 .lista-servicios li {
   text-decoration: none;
   list-style: none;
-  text-align: center;
+  text-align: right;
   font-weight: 600;
   line-height: 1.75;
   font-size:large;
