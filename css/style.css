@@ -175,7 +175,46 @@
   color: #fff;
   text-decoration: none;
 }
-         
+
+
+.btn-grad-close {
+  background-image: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%)
+}
+
+.btn-grad-close {
+  padding: 15px 0 15px 0;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-weight: 500;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  display: block;
+  border: none;
+}
+
+.btn-grad-close:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ------------------------------ CONTACT BUTTON ------------------------------ */
+
+#contactanos-top,
+#contactanos-bot {
+  margin: 2em 0 2em 0;
+  width: 50%;
+  margin-left: 1.5rem;
+}
+
+#close-bot {
+  width: 25%;
+}
+
+
 
 /* --------------------------- MAIN SECTION CONTAINER --------------------------- */
 
@@ -232,16 +271,6 @@
   font-weight: 700;
   text-shadow: 0px 0px 5px 5px #211261;
 }
-
-/* ------------------------------ CONTACT BUTTON ------------------------------ */
-
-#contactanos-top,
-#contactanos-bot {
-  margin: 2em 0 2em 0;
-  width: 50%;
-  margin-left: 1.5rem;
-}
-
 
 /* ------------------------------ DIVISION BANNER SECTION ------------------------------ */
 
@@ -348,6 +377,34 @@
   z-index: 0;
 }
 
+.modal-header {
+  background-color: #211261;
+}
+
+.close {
+  color: white;
+}
+
+.lista-servicios {
+  padding: 0;
+  margin: 0;
+}
+
+.lista-servicios li {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.75;
+  font-size:large;
+}
+
+.modal-footer {
+  margin:0;
+  padding:10px 0;
+  display: flex;
+  justify-content: center;
+}
 
 
 
