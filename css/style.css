@@ -140,6 +140,7 @@
   font-size: 1.2rem;
   border-radius: 10px;
   display: block;
+  border: none;
 }
 
 .btn-grad:hover {
@@ -149,6 +150,32 @@
   color: #211261;
   text-decoration: none;
 }
+
+.btn-grad-bot {
+  background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD 51%, #AAFFA9 100%);
+}
+
+.btn-grad-bot {
+  padding: 15px 0 15px 0;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-weight: 500;
+  color: #211261;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  display: block;
+  border: none;
+}
+
+.btn-grad-bot:hover {
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
 
 /* --------------------------- MAIN SECTION CONTAINER --------------------------- */
 
@@ -172,7 +199,7 @@
   padding-top: 2em;
   width: 80%;
   line-height: 1;
-  color:#211261;
+  color: #211261;
 }
 
 #header h2 {
@@ -208,11 +235,13 @@
 
 /* ------------------------------ CONTACT BUTTON ------------------------------ */
 
-#contactanos-top {
-  margin: 3em 0 1em 0;
+#contactanos-top,
+#contactanos-bot {
+  margin: 2em 0 2em 0;
   width: 50%;
   margin-left: 1.5rem;
 }
+
 
 /* ------------------------------ DIVISION BANNER SECTION ------------------------------ */
 
@@ -229,21 +258,21 @@
   font-size: 1.3rem;
   letter-spacing: 1px;
   text-align: center;
-  margin:0;
-  padding:0;
-  color:white;
+  margin: 0;
+  padding: 0;
+  color: white;
   font-weight: 600;
   z-index: 1;
   opacity: 100%;
 }
 
 #bg-img-1 {
-  position:absolute;
+  position: absolute;
   background-size: cover;
   width: 100%;
   height: 240px;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   left: 0;
   top: 0;
   z-index: 0;
@@ -277,6 +306,10 @@
 
 /* ------------------------------ SERVICES BLOCKS ------------------------------ */
 
+.services-section {
+  position: relative;
+}
+
 .service-block {
   width: 85%;
   height: auto;
@@ -287,10 +320,32 @@
   overflow: hidden;
   margin: 1em;
   padding: .5em;
+  /* background: linear-gradient(45deg, rgba(33, 18, 97, 1) 34%, rgba(48, 26, 142, 1) 45%, rgba(33, 92, 158, 1) 66%, rgba(34, 187, 237, 0.5) 100%); */
+  /* color: white; */
 }
 
-.service-block svg {
-  width:100px;
+.card-body svg {
+  width: 30%;
+}
+
+.card-fig {
+  position: absolute;
+  width: 50%;
+  top: -60px;
+  left: -60px;
+  z-index: 0;
+}
+
+.card-text {
+  color: #211261;
+}
+
+.container-fig {
+  position: absolute;
+  width: 80%;
+  bottom: -140px;
+  right: -120px;
+  z-index: 0;
 }
 
 
