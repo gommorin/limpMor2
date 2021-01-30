@@ -353,42 +353,42 @@
 
 #serv1 {
   background:
-    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
     url("/img/limpiezas-moreira-limpieza-interioress-stock-k5x5.jpeg");
   background-size: cover;
 }
 
 #serv2 {
   background:
-    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
     url("/img/limpiezas-moreira-limpieza-oficinas-stock-y6v1.jpeg");
   background-size: cover;
 }
 
 #serv3 {
   background:
-    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
     url("/img/limpiezas-moreira-limpieza-vidrios-r2d9.jpeg");
   background-size: cover;
 }
 
 #serv4 {
   background:
-    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
     url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d1.jpeg");
   background-size: cover;
 }
 
 #serv5 {
   background:
-    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
     url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d4.jpeg");
   background-size: cover;
 }
 
 #serv6 {
   background:
-    linear-gradient(135deg, rgba(108, 108, 108, .3), rgb(0,0,0, .7)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
     url("/img/limpiezas-moreira-limpieza-obra-h9c2.jpeg");
   background-size: cover;
 }
