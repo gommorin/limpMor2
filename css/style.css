@@ -457,6 +457,14 @@
   z-index: 0;
 }
 
+.container-fig-bottom {
+  position: absolute;
+  width: 80%;
+  bottom: -140px;
+  left: -75px;
+  z-index: 0;
+}
+
 /* ------------------------------ SERVICE MODAL ------------------------------ */
 
 .modal-header {
