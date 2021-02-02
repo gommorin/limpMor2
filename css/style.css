@@ -285,7 +285,7 @@
 
 #div-text {
   font-size: 1.3rem;
-  letter-spacing: 1px;
+  letter-spacing: .7px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -311,14 +311,31 @@
 
 /* ------------------------------ TEXT MIDDLE SECTION ------------------------------ */
 
+#principal-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #160C40;
+}
+
+#principal-top svg {
+  width:200%;
+  padding-left: 1rem;
+}
+
+#principal-bot {
+}
+
 #covid-text {
   text-align: center;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
   line-height: 1.2;
-  padding: 0 2rem 3rem 2rem;
+  text-align: right;
+  padding-right: 1rem;
   margin: 0;
-  color: #211261;
+  color: white;
+  padding-bottom: 2rem;
 }
 
 /* ------------------------------ TITLE SERVICES SECTION ------------------------------ */
@@ -327,7 +344,7 @@
   text-align: center;
   line-height: 1;
   letter-spacing: -1px;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
   margin: 0;
   background-color: #160C40;
   color: white;
@@ -414,6 +431,7 @@
   top: -60px;
   left: -100px;
   z-index: 0;
+  opacity: 70%;
 }
 
 .card-text {
