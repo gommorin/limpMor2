@@ -47,6 +47,13 @@
   background: linear-gradient(0deg, rgba(33, 18, 97, 1) 0%, rgba(48, 26, 142, 1) 34%, rgba(33, 92, 158, 1) 72%, rgba(34, 187, 237, 0.8309698879551821) 100%);
 }
 
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .navbar {
   background: linear-gradient(135deg, rgba(33, 18, 97, 1) 15%, rgba(33, 92, 158, 1) 81%);
   border-radius: 15px;
@@ -219,6 +226,73 @@
   margin: 1rem 0;
 }
 
+/* ------------------------------ MODAL ------------------------------ */
+
+
+.modal-content {
+  border-radius: 15px !important;
+  border: 0;
+  margin: 0 4rem;
+}
+
+.modal-header {
+  background: #211261;
+  color: white;
+  border-radius: 15px 15px 0 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .close {
+  opacity: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-header .close:hover {
+  color: #12D8FA;
+  box-shadow: none;
+  outline: none;
+}
+
+#tituloModal {
+  font-size: 1.1rem;
+}
+
+.modal-body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modal-body .btn:focus {
+  outline: none !important;
+}
+
+.modal-body i:hover {
+  color: #211261;
+}
+
+.modal-body i:active {
+  color: #3DAE2B;
+}
+
+.modal-footer {
+  background: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+  border-radius: 0 0 15px 15px;
+}
+
+.modal-footer .btn {
+  background: transparent;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: 0;
+  width: 75%;
+  height: auto;
+}
 
 
 /* --------------------------- MAIN SECTION CONTAINER --------------------------- */
@@ -250,7 +324,7 @@
   line-height: 1.2;
   padding-left: 1.5rem;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -2px;
   font-style: italic;
   color: #3DAE2B;
@@ -329,12 +403,11 @@
 }
 
 #principal-top svg {
-  width:200%;
+  width: 200%;
   padding-left: 1rem;
 }
 
-#principal-bot {
-}
+#principal-bot {}
 
 #covid-text {
   text-align: center;
@@ -380,48 +453,49 @@
 
 #serv1 {
   background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
     url("/img/limpiezas-moreira-limpieza-interioress-stock-k5x5.jpeg");
   background-size: cover;
 }
 
 #serv2 {
   background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
     url("/img/limpiezas-moreira-limpieza-oficinas-stock-y6v1.jpeg");
   background-size: cover;
 }
 
 #serv3 {
   background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
     url("/img/limpiezas-moreira-limpieza-vidrios-r2d9.jpeg");
   background-size: cover;
 }
 
 #serv4 {
   background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
     url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d1.jpeg");
   background-size: cover;
 }
 
 #serv5 {
   background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
     url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d4.jpeg");
   background-size: cover;
 }
 
 #serv6 {
   background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
     url("/img/limpiezas-moreira-limpieza-obra-h9c2.jpeg");
   background-size: cover;
 }
 
 .card {
   height: 280px;
+  padding: 3rem 0;
 }
 
 .card-body svg {
@@ -429,10 +503,41 @@
 }
 
 .card-body h4 {
-  margin-top: 3.5rem;
-  margin-bottom: 2rem;
-  text-align:right;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: right;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    width: 14vw;
+    position: relative;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-body h4 {
+    text-align: center;
+    text-shadow: 1px 2px 10px 0 #272727 !important;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .card-body .btn {
+    width: 25vw;
+  }
+
+  .card-fig {
+    top: 0;
+    left: 0;
+  }
+
 }
 
 .card-fig {
@@ -446,7 +551,7 @@
 
 .card-text {
   color: #211261;
-  z-index:1;
+  z-index: 1;
 }
 
 .container-fig {
@@ -477,19 +582,19 @@
 }
 
 .modal-body #modal-body-1 {
-  height:280px;
+  height: 280px;
 }
 
 .modal-body #modal-body-2,
 .modal-body #modal-body-5,
 .modal-body #modal-body-6 {
-  height:260px;
+  height: 260px;
 }
 
 
 .modal-body #modal-body-3,
 .modal-body #modal-body-4 {
-  height:280px;
+  height: 280px;
 }
 
 .close {
@@ -497,16 +602,16 @@
 }
 
 #modal-body-1 .service-icon {
-  position:absolute;
-  top:70px;
-  left:20px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
   transform: scale(1.5);
 }
 
 .service-icon {
-  position:absolute;
-  top:25px;
-  left:20px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
   transform: scale(1.5);
 }
 
@@ -521,12 +626,12 @@
   text-align: right;
   font-weight: 600;
   line-height: 1.75;
-  font-size:large;
+  font-size: large;
 }
 
 .modal-footer {
-  margin:0;
-  padding:10px 0;
+  margin: 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
 }
@@ -547,7 +652,7 @@
 
 .clients-section {
   position: relative;
-  width:100%;
+  width: 100%;
   height: 400px;
   padding: 1rem 0 .5rem 0;
 }
@@ -582,16 +687,16 @@
 }
 
 #contact-links h3 {
-  color:white;
+  color: white;
   text-align: center;
   padding: 5px 0;
 }
 
 #social-media-icons {
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width:100%;
+  width: 100%;
   padding: 2rem 0;
 }
 

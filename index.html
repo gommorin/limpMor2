@@ -10,15 +10,45 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>SITIO BOOTSTRAP</title>
+  <title>Inicio</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BR5LF2H8RS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BR5LF2H8RS');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M26524D');
+  </script>
 </head>
 
 <body>
+  <div id="bg-image"></div>
+      <!-- ALL -->
   <div class="container-fluid" height="auto" id="allPage">
-    <!-- ALL -->
     <div class="row pt-4" height="300px">
-      <!-- NAVBAR -->
       <div class="container" height="500px" width="900px">
+        <!-- NAVBAR -->
         <div class="row">
           <div class="col-12 mb-4 pt-1 pb-3">
             <nav class="navbar navbar-expand-md bg-light">
@@ -125,8 +155,38 @@
                     <circle class="fig-header-cls-8" cx="266.94" cy="326.61" r="72.58" />
                   </g>
                 </svg>
-                <a id="contactanos-top" class="btn btn-grad btn-lg btn-contactanos" href="/servicios"
-                  role="button">CONTÁCTANOS</a>
+                <a id="contactanos-top" class="btn btn-grad btn-lg btn-contactanos" href="/servicios" role="button"
+                  data-toggle="modal" data-target="#ModalCenter">CONTÁCTANOS</a>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="tituloModal">Elige cómo deseas contactarnos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <button type="button" class="btn btn-contact" id="button-whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=593961933999&text=Qu%C3%A9%20tal?%20Quisiera%20poder%20hablar%20con%20ustedes%20para%20conocer%20m%C3%A1s%20acerca%20de%20sus%20servicios%20y%20solicitar%20una%20cotizaci%C3%B3n."
+                          target="_blank" rel="noopener noreferrer">
+                          <i class="dropdown-icon fab fa-4x fa-whatsapp"></i>
+                        </a>
+                      </button>
+                      <button type="button" class="btn btn-contact" id="button-whatsapp">
+                        <a href="mailto:info@limpiezasmoreira.ec" target="_blank" rel="noopener noreferrer">
+                          <i class="dropdown-icon far fa-4x fa-envelope"></i>
+                        </a>
+                      </button>
+                    </div>
+                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">CANCELAR</button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- TOP TEXT -->
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -324,8 +384,8 @@
               </svg>
               <!-- SERVICES SECTION -->
               <div class="row services-section">
-                <!-- SERVICE CARDS -->
-                <div class="col-12 col-md-4 col-lg-4 services text-center px-0 d-flex justify-content-center">
+                <!-- SERVICE CARD 1 -->
+                <div class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
                   <div class="card service-block mx-0" id="serv1">
                     <svg class="card-fig" xmlns="http://www.w3.org/2000/svg" viewBox="30 80 940 840">
                       <defs>
@@ -351,8 +411,7 @@
                       </g>
                     </svg>
                     <div class="card-body">
-                      <h4 class="card-title py-2">SANITIZACIÓN Y PRODUCTOS DE LIMPIEZA PROFESIONAL</h4>
-                      <p class="card-text"></p>
+                        <h4 class="card-title py-2">SANITIZACIÓN Y PRODUCTOS DE LIMPIEZA PROFESIONAL</h4>
                       <!-- MODAL -->
                       <a href="#" class="btn btn-primary btn-grad" data-toggle="modal"
                         data-target="#modalServ1">DESCUBRE MÁS</a>
@@ -445,8 +504,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- SERVICE CARDS -->
-                <div class="col-12 col-md-4 col-lg-4 services text-center px-0 d-flex justify-content-center">
+                <!-- SERVICE CARD 2 -->
+                <div class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
                   <div class="card service-block mx-0" id="serv2">
                     <svg class="card-fig" xmlns="http://www.w3.org/2000/svg" viewBox="30 80 940 840">
                       <defs>
@@ -473,7 +532,6 @@
                     </svg>
                     <div class="card-body">
                       <h4 class="card-title py-2">LIMPIEZA GENERAL <br> OFICINAS Y EDIFICIOS</h4>
-                      <p class="card-text"></p>
                       <!-- MODAL -->
                       <a href="#" class="btn btn-primary btn-grad" data-toggle="modal"
                         data-target="#modalServ2">DESCUBRE MÁS</a>
@@ -545,8 +603,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- SERVICE CARDS -->
-                <div class="col-12 col-md-4 col-lg-4 services text-center px-0 d-flex justify-content-center">
+                <!-- SERVICE CARD 3 -->
+                <div class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
                   <div class="card service-block mx-0" id="serv3">
                     <svg class="card-fig" xmlns="http://www.w3.org/2000/svg" viewBox="30 80 940 840">
                       <defs>
@@ -573,7 +631,6 @@
                     </svg>
                     <div class="card-body">
                       <h4 class="card-title py-2"><br>LIMPIEZA DE VIDRIOS</h4>
-                      <p class="card-text"></p>
                       <!-- MODAL -->
                       <a href="#" class="btn btn-primary btn-grad" data-toggle="modal"
                         data-target="#modalServ3">DESCUBRE MÁS</a>
@@ -650,8 +707,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- SERVICE CARDS -->
-                <div class="col-12 col-md-4 col-lg-4 services text-center px-0 d-flex justify-content-center">
+                <!-- SERVICE CARD 4 -->
+                <div class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
                   <div class="card service-block mx-0" id="serv4">
                     <svg class="card-fig" xmlns="http://www.w3.org/2000/svg" viewBox="30 80 940 840">
                       <defs>
@@ -678,7 +735,6 @@
                     </svg>
                     <div class="card-body">
                       <h4 class="card-title py-2">LIMPIEZA Y MANTENIMIENTO EN INDUSTRIAS Y ÁREAS VERDES</h4>
-                      <p class="card-text"></p>
                       <!-- MODAL -->
                       <a href="#" class="btn btn-primary btn-grad" data-toggle="modal"
                         data-target="#modalServ4">DESCUBRE MÁS</a>
@@ -761,8 +817,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- SERVICE CARDS -->
-                <div class="col-12 col-md-4 col-lg-4 services text-center px-0 d-flex justify-content-center">
+                <!-- SERVICE CARD 5 -->
+                <div class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
                   <div class="card service-block mx-0" id="serv5">
                     <svg class="card-fig" xmlns="http://www.w3.org/2000/svg" viewBox="30 80 940 840">
                       <defs>
@@ -789,7 +845,6 @@
                     </svg>
                     <div class="card-body">
                       <h4 class="card-title py-2">URBANIZACIONES <br> FRACCIONAMIENTOS</h4>
-                      <p class="card-text"></p>
                       <!-- MODAL -->
                       <a href="#" class="btn btn-primary btn-grad" data-toggle="modal"
                         data-target="#modalServ5">DESCUBRE MÁS</a>
@@ -870,8 +925,8 @@
                     </div>
                   </div>
                 </div>
-                <!-- SERVICE CARDS -->
-                <div class="col-12 col-md-4 col-lg-4 services text-center px-0 d-flex justify-content-center">
+                <!-- SERVICE CARD 6 -->
+                <div class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
                   <div class="card service-block mx-0" id="serv6">
                     <svg class="card-fig" xmlns="http://www.w3.org/2000/svg" viewBox="30 80 940 840">
                       <defs>
@@ -898,7 +953,6 @@
                     </svg>
                     <div class="card-body">
                       <h4 class="card-title py-2">LIMPIEZA EN ZONAS <br> DE TRABAJO DE ALTO RIESGO</h4>
-                      <p class="card-text"></p>
                       <!-- MODAL -->
                       <a href="#" class="btn btn-primary btn-grad" data-toggle="modal"
                         data-target="#modalServ6">DESCUBRE MÁS</a>
@@ -1000,9 +1054,6 @@
                   <!-- CAROUSEL -->
                   <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                      <!-- <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="2"></li> -->
                     </ol>
                     <div class="carousel-inner">
                       <div data-interval="2000" class="carousel-item active">
@@ -1103,29 +1154,6 @@
                   d="M470.6,338.28C177.4,440.15,49.41,757.18,370.09,783.61c279.38,23,351.46,157.54,501,137.77,198.68-26.26,196.16-304.72,196.44-304.77C1073.07,267.82,786,228.69,470.6,338.28Z" />
                 <circle class="fig-bottom-cls-8" cx="329.92" cy="731.56" r="98.36" />
               </svg>
-              <!-- <svg class="container-fig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-                <defs>
-                  <style>
-                    .fig-green-cls-1 {
-                      fill: #3dae2b;
-                    }
-
-                    .fig-green-cls-2 {
-                      fill: none;
-                      stroke: #cfe2e5;
-                      stroke-miterlimit: 10;
-                      stroke-width: 3.95px;
-                      opacity: 0.5;
-                    }
-                  </style>
-                </defs>
-                <g id="Circulos_Doble_Verde" data-name="Circulos Doble Verde">
-                  <path class="fig-green-cls-1"
-                    d="M643.62,802.54c-113.4,64.1-234.88,98.23-342.06,96.1-108.19-2.15-189-41-227.68-109.3S43.7,631.7,97.65,537.9C151.09,445,243,358.5,356.38,294.39s234.88-98.23,342.06-96.1c108.19,2.15,189,41,227.68,109.31S956.3,465.23,902.35,559C848.91,652,757,738.44,643.62,802.54Z" />
-                  <path class="fig-green-cls-2"
-                    d="M699.42,588.74c-57.49,89-132.11,159.48-210.13,198.42C410.54,826.47,337.62,829,284,794.4s-81.28-102.15-77.84-190.11c3.4-87.12,36.94-184.12,94.43-273.13S432.69,171.69,510.71,132.74C589.46,93.43,662.38,90.86,716,125.5s81.29,102.15,77.84,190.11C790.45,402.73,756.91,499.73,699.42,588.74Z" />
-                </g>
-              </svg> -->
             </div>
           </div>
         </div>
