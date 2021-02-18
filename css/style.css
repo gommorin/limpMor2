@@ -314,19 +314,22 @@
   background: rgb(255, 255, 255, .4);
 }
 
-/* #header::before {    
+#header::before {    
   content: "";
   background-image: url('/img/bg-image-2.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  width: 200%;
+  width: 100%;
   top: 0px;
-  left: -120px;
+  left: 0px;
   bottom: 0px;
   right: 0px;
-  opacity: 0.75;
-} */
+  opacity: 0.5;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+}
 
 #header h1 {
   position: relative;
@@ -350,6 +353,20 @@
   font-style: italic;
   color: #3DAE2B;
   z-index: 3;
+}
+
+#top-text {
+  position: relative;
+  padding: 4rem 0 0 0;
+  margin: 0;
+}
+
+#top-svg {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  z-index: 5;
+  background: transparent;
 }
 
 /* ------------------------------ HEADER SHAPES ------------------------------ */
