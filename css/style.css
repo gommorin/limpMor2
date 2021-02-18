@@ -570,6 +570,16 @@
   z-index: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .container-fig-bottom {
+    position: absolute;
+    width: 80%;
+    bottom: -200px;
+    left: -200px;
+    z-index: 0;
+  }
+}
+
 /* ------------------------------ SERVICE MODAL ------------------------------ */
 
 .modal-header {
@@ -659,6 +669,13 @@
 
 .carousel-item {
   transform: scale(.5);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-section {
+    height: 500px;
+    padding: 0;
+  } 
 }
 
 /* -------------------------------------- FOOTER -------------------------------------- */
