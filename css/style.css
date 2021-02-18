@@ -124,6 +124,7 @@
 .contact-icons .fab:active {
   color: #59FF3F;
   transition: 300ms ease-in;
+  cursor: pointer;
 }
 
 .contact-icons .far:hover,
@@ -131,6 +132,7 @@
 .contact-icons .far:active {
   color: #59FF3F;
   transition: 300ms ease-in;
+  cursor: pointer;
 }
 
 /* ------------------------------ GRADIENT BUTTONS ------------------------------ */
@@ -392,6 +394,29 @@
   opacity: 60%;
 }
 
+@media screen and (min-width: 768px) {
+  #division {
+    position: relative;
+    height: 326px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  #bg-img-1 {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 50%;
+  }
+}
+
 
 /* ------------------------------ TEXT MIDDLE SECTION ------------------------------ */
 
@@ -407,7 +432,23 @@
   padding-left: 1rem;
 }
 
-#principal-bot {}
+@media screen and (min-width: 768px) {
+  #principal-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #160C40;
+  }
+
+  #principal-top p {
+    padding-top: 2rem;
+  }
+
+  #principal-top svg {
+    width: 150%;
+    padding-left: 1rem;
+  }
+}
 
 #covid-text {
   text-align: center;
@@ -431,6 +472,19 @@
   margin: 0;
   background-color: #160C40;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #main-title {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -1px;
+    padding: 3rem 1rem 2rem 1rem;
+    margin: 0;
+    background-color: #160C40;
+    color: white;
+    font-size: 2rem !important;
+  }
 }
 
 /* ------------------------------ SERVICES CARDS ------------------------------ */
@@ -510,6 +564,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .services-section {
+    padding: 0 2rem;
+  }
+  
   .services {
     width: 14vw;
     position: relative;
@@ -675,7 +733,7 @@
   .clients-section {
     height: 500px;
     padding: 0;
-  } 
+  }
 }
 
 /* -------------------------------------- FOOTER -------------------------------------- */
