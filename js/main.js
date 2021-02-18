@@ -1,6 +1,5 @@
-var myCarousel = document.querySelector('#clientsCarousel')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 1500,
+$('.carousel').carousel({
+  interval: 2500,
   touch: true,
-  wrap: false
+  wrap: true,
 })

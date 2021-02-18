@@ -176,7 +176,6 @@
 .btn-grad-bot:hover {
   background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -224,6 +223,14 @@
 #contactanos-bot {
   background-color: #160C40;
   width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  #contactanos-top {
+    margin: 2rem 0 2rem 1.5rem;
+    width: 30%;
+    position: relative;
+  }
 }
 
 /* ------------------ MODAL ------------------ */
@@ -410,7 +417,6 @@
 }
 
 /*TABLET*/
-/*TABLET*/
 @media screen and (min-width: 768px) {
   #fig-header {
     position: absolute;
@@ -471,8 +477,18 @@
 }
 
 /*TABLET*/
-/*TABLET*/
 @media screen and (min-width: 768px) {
+  #top-text {
+    position: relative;
+    padding: 4rem 0 0 0;
+    margin: 0;
+  }
+
+  #top-svg {
+    position: absolute;
+    top: -88%;
+  }
+
   #principal-top {
     display: flex;
     justify-content: space-around;
@@ -505,6 +521,17 @@
 
 /*DESK*/
 @media screen and (min-width: 990px) {
+  #top-text {
+    position: relative;
+    padding: 4rem 0 0 0;
+    margin: 0;
+  }
+  
+  #top-svg {
+    position: absolute;
+    top: -110%;
+  }
+  
   #principal-top {
     display: flex;
     justify-content: space-around;
@@ -567,7 +594,6 @@
 }
 
 /*TABLET*/
-/*TABLET*/
 @media screen and (min-width: 768px) {
   #division {
     position: relative;
@@ -604,7 +630,6 @@
   color: white;
 }
 
-/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   #main-title {
@@ -653,7 +678,6 @@
   color: white;
 }
 
-/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .services-section {
@@ -720,7 +744,6 @@
   z-index: 1;
 }
 
-/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .container-fig-bottom {
@@ -892,7 +915,7 @@
   position: absolute;
   width: 120%;
   top: 2%;
-  left: 12%;
+  left: 25%;
   bottom: 0;
   right: 0;
   opacity: 0.7;
@@ -901,11 +924,22 @@
   margin: 0;
 }
 
-.carousel-item {
-  transform: scale(.5);
+#clientsCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*TABLET*/
+.carousel-inner {
+  width: 40%;
+  height: auto;
+}
+
+.carousel-item img {
+  width: 50%;
+  height: auto;
+}
+
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .clients-section {
@@ -920,8 +954,8 @@
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;
-    top: 0px;
-    left: 0px;
+    top: -15%;
+    left: 10%;
     bottom: 0px;
     right: 0px;
     opacity: 0.5;
@@ -966,6 +1000,16 @@
     color: #211261;
     z-index: 2;
     position: relative;
+  }
+
+  .carousel-inner {
+    width: 30%;
+    height: auto;
+  }
+
+  .carousel-item img {
+    width: 75%;
+    height: auto;
   }
 }
 
@@ -1038,10 +1082,9 @@
 }
 
 /*TABLET*/
-/*TABLET*/
 @media screen and (min-width: 768px) {
   #footer-col img {
-    width: 40%;
+    width: 100%;
   }
 
   #gomm-signature {
@@ -1086,13 +1129,16 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 2rem 0 1rem 2rem;
+    padding: 1rem 0 1rem 3rem;
   }
 
   #contact-links h3 {
     color: white;
     text-align: left;
-    padding: 5px 0;
+    padding: 2px 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
   }
 
   #social-media-icons {
@@ -1100,12 +1146,10 @@
     justify-content: space-evenly;
     align-items: flex-end;
     width: 100%;
-    padding: 2rem 1rem 2rem 4rem;
+    padding: 2rem 0 2rem 4rem;
     background-color: #3DAE2B;
   }
-
 }
-
 
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
