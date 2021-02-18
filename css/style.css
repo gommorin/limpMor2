@@ -304,7 +304,7 @@
 /* ------------------ HEADER ------------------ */
 #header {
   position: relative;
-  background: rgb(255, 255, 255, .4);
+  height: 600px;
 }
 
 #header h1 {
@@ -331,10 +331,70 @@
   z-index: 3;
 }
 
-#top-text {
-  position: relative;
-  padding: 4rem 0 0 0;
+#header::before {
+  content: "";
+  background-image: url('/img/limpMor-bg-top-870219331.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 155%;
+  top: 0;
+  left: -33%;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+  z-index: 0;
+  padding: 0;
   margin: 0;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  #header {
+    position: relative;
+    height: 600px;
+  }
+
+  #header::before {
+    content: "";
+    background-image: url('/img/limpMor-bg-top-870219331.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #header {
+    position: relative;
+    height: 700px;
+  }
+
+  #header::before {
+    content: "";
+    background-image: url('/img/limpMor-bg-top-870219331.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 
@@ -350,9 +410,8 @@
 }
 
 /*TABLET*/
+/*TABLET*/
 @media screen and (min-width: 768px) {
-
-  /* ------------ HEADER ------------ */
   #fig-header {
     position: absolute;
     width: 50%;
@@ -387,6 +446,17 @@
 }
 
 /* ---------------------- TOP TEXT SECTION ---------------------- */
+#top-text {
+  position: relative;
+  padding: 4rem 0 0 0;
+  margin: 0;
+}
+
+#top-svg {
+  position: absolute;
+  top: -35%;
+}
+
 #principal-top {
   display: flex;
   justify-content: space-around;
@@ -400,6 +470,7 @@
   padding-left: 1rem;
 }
 
+/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   #principal-top {
@@ -418,6 +489,18 @@
     width: 120%;
     padding-left: 1rem;
   }
+}
+
+#covid-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: right;
+  padding-right: 1rem;
+  margin: 0;
+  color: white;
+  padding-bottom: 2rem;
 }
 
 /*DESK*/
@@ -448,19 +531,6 @@
   }
 }
 
-#covid-text {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.2;
-  text-align: right;
-  padding-right: 1rem;
-  margin: 0;
-  color: white;
-  padding-bottom: 2rem;
-}
-
-
 /* -------------------- MIDDLE TEXT SECTION -------------------- */
 #division {
   position: relative;
@@ -472,11 +542,11 @@
 }
 
 #div-text {
-  font-size: 1.3rem;
-  letter-spacing: .7px;
+  font-size: 1.2rem;
+  letter-spacing: -1.2px;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 25px;
   color: white;
   font-weight: 600;
   z-index: 1;
@@ -496,6 +566,7 @@
   opacity: 60%;
 }
 
+/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   #division {
@@ -533,6 +604,7 @@
   color: white;
 }
 
+/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   #main-title {
@@ -581,6 +653,7 @@
   color: white;
 }
 
+/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .services-section {
@@ -647,6 +720,7 @@
   z-index: 1;
 }
 
+/*TABLET*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
   .container-fig-bottom {
@@ -812,16 +886,16 @@
 
 .clients-section::before {
   content: "";
-  background-image: url('/img/bg-image-2.jpg');
-  background-size: cover;
+  background-image: url('/img/limpMor-bg-bott-698102901.jpg');
+  background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  opacity: 0.5;
+  width: 120%;
+  top: 2%;
+  left: 12%;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
   z-index: 0;
   padding: 0;
   margin: 0;
@@ -832,6 +906,7 @@
 }
 
 /*TABLET*/
+/*TABLET*/
 @media screen and (min-width: 768px) {
   .clients-section {
     height: 500px;
@@ -840,7 +915,7 @@
 
   .clients-section::before {
     content: "";
-    background-image: url('/img/bg-image-2.jpg');
+    background-image: url('/img/limpMor-bg-bott-698102901.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -870,13 +945,13 @@
 @media screen and (min-width: 990px) {
   .clients-section::before {
     content: "";
-    background-image: url('/img/bg-image-2.jpg');
+    background-image: url('/img/limpMor-bg-bott-698102901.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     width: 125%;
     top: -40%;
-    left: -15%;
+    left: -8%;
     opacity: 0.7;
     z-index: 0;
     padding: 0;
@@ -898,7 +973,7 @@
 
 #footer-col {
   background-color: #3DAE2B !important;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -906,7 +981,7 @@
 }
 
 #footer-col img {
-  width: 50%;
+  width: 100%;
 }
 
 #footer-col p {
@@ -917,7 +992,8 @@
 }
 
 #contact-links {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  background-color: #3DAE2B;
 }
 
 #contact-links h3 {
@@ -962,6 +1038,7 @@
 }
 
 /*TABLET*/
+/*TABLET*/
 @media screen and (min-width: 768px) {
   #footer-col img {
     width: 40%;
@@ -986,7 +1063,7 @@
 @media screen and (min-width: 990px) {
   #footer-col {
     background-color: #3DAE2B !important;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
@@ -1005,7 +1082,7 @@
 
   #contact-links {
     background-color: #3DAE2B !important;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
