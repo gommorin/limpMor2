@@ -217,6 +217,7 @@
 #contactanos-top {
   margin: 2rem 0 2rem 1.5rem;
   width: 50%;
+  position: relative;
 }
 
 #close-bot {
@@ -310,9 +311,25 @@
 
 #header {
   position: relative;
+  background: rgb(255, 255, 255, .4);
 }
 
+/* #header::before {    
+  content: "";
+  background-image: url('/img/bg-image-2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200%;
+  top: 0px;
+  left: -120px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.75;
+} */
+
 #header h1 {
+  position: relative;
   padding-left: 1.5rem;
   letter-spacing: -2px;
   font-weight: 500;
@@ -320,9 +337,11 @@
   width: 80%;
   line-height: 1;
   color: #211261;
+  z-index: 3;
 }
 
 #header h2 {
+  position: relative;
   line-height: 1.2;
   padding-left: 1.5rem;
   font-size: 1.5rem;
@@ -330,6 +349,7 @@
   letter-spacing: -2px;
   font-style: italic;
   color: #3DAE2B;
+  z-index: 3;
 }
 
 /* ------------------------------ HEADER SHAPES ------------------------------ */
@@ -567,7 +587,7 @@
   .services-section {
     padding: 0 2rem;
   }
-  
+
   .services {
     width: 14vw;
     position: relative;
@@ -708,7 +728,7 @@
 
 #contactanos-bot {
   background-color: #160C40;
-  width:100%;
+  width: 100%;
 }
 
 #clientes-title {
