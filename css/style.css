@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 /* COLORES PRIMARIOS
   Azules:
-  # 301A8E
+  # 301A8E --> Claro
     2C1881
     281675
     281675
@@ -8,10 +11,10 @@
     1E1057
     1B0F4F
     180D47
-    160C40
+    160C40 --> Oscuro
 
   Verdes:
-  # 59FF3F
+  # 59FF3F --> Claro
     51E839
     4AD334
     43BF2F
@@ -19,7 +22,7 @@
     379D27
     318D23
     2C7F1F
-    28721C
+    28721C --> Oscuro
 
   COLORES SECUNDARIOS
   Cyan -- 22BBED
@@ -27,15 +30,9 @@
   Gris -- 757575
 */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-
-/* ------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------ */
-/* ---------------------------------- GENERAL LAYOUT ---------------------------------- */
-/* ------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------- */
+/* ------------------------- WHOLE PAGE ------------------------- */
+/* -------------------------------------------------------------- */
 
 
 * {
@@ -54,17 +51,16 @@
   box-shadow: none;
 }
 
+/* --------------------------------------------------------------- */
+/* ---------------------------- MOVIL ---------------------------- */
+/* --------------------------------------------------------------- */
+
+/*---------------- NAVBAR --------------- */
 .navbar {
   background: linear-gradient(135deg, rgba(33, 18, 97, 1) 15%, rgba(33, 92, 158, 1) 81%);
   border-radius: 15px;
   box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.2);
 }
-
-/* ------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-/* --------------------------------------- MOVIL --------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -74,23 +70,7 @@
   box-shadow: none;
 }
 
-/* ------------------------------ DROPDOWN ARROWS ------------------------------ */
-
-#doubleArrow {
-  color: white;
-}
-
-#doubleArrow:hover,
-#doubleArrow:focus,
-#doubleArrow:active {
-  color: #59FF3F !important;
-  border: 0 !important;
-  outline: none !important;
-  box-shadow: none;
-}
-
-/* ------------------------------ MENU COLLAPSE ------------------------------ */
-
+/*---------- NAVBAR MENU COLLAPSE --------- */
 .navbar-collapse .navbar-nav {
   display: flex;
   flex-direction: row;
@@ -112,6 +92,21 @@
   border: 0;
 }
 
+/* ------------- DROPDOWN ARROWS ------------- */
+#doubleArrow {
+  color: white;
+}
+
+#doubleArrow:hover,
+#doubleArrow:focus,
+#doubleArrow:active {
+  color: #59FF3F !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+/*---------------- CONTACT ICONS --------------- */
 .contact-icons .fab,
 .contact-icons .far {
   color: white;
@@ -135,8 +130,7 @@
   cursor: pointer;
 }
 
-/* ------------------------------ GRADIENT BUTTONS ------------------------------ */
-
+/* ------------ GRADIENT BUTTONS ------------ */
 .btn-grad {
   background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%)
 }
@@ -187,7 +181,6 @@
   text-decoration: none;
 }
 
-
 .btn-grad-close {
   background-image: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%)
 }
@@ -212,8 +205,7 @@
   text-decoration: none;
 }
 
-/* ------------------------------ CONTACT BUTTON ------------------------------ */
-
+/* ------------- CONTACT BUTTONS ------------- */
 #contactanos-top {
   margin: 2rem 0 2rem 1.5rem;
   width: 50%;
@@ -229,9 +221,12 @@
   margin: 1rem 0;
 }
 
-/* ------------------------------ MODAL ------------------------------ */
+#contactanos-bot {
+  background-color: #160C40;
+  width: 100%;
+}
 
-
+/* ------------------ MODAL ------------------ */
 .modal-content {
   border-radius: 15px !important;
   border: 0;
@@ -299,7 +294,6 @@
 
 
 /* --------------------------- MAIN SECTION CONTAINER --------------------------- */
-
 .container .all-content {
   border-radius: 20px !important;
   background-color: white;
@@ -307,28 +301,10 @@
   overflow: hidden;
 }
 
-/* ------------------------------ HEADER ------------------------------ */
-
+/* ------------------ HEADER ------------------ */
 #header {
   position: relative;
   background: rgb(255, 255, 255, .4);
-}
-
-#header::before {    
-  content: "";
-  background-image: url('/img/bg-image-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  opacity: 0.5;
-  z-index: 0;
-  padding: 0;
-  margin: 0;
 }
 
 #header h1 {
@@ -361,15 +337,8 @@
   margin: 0;
 }
 
-#top-svg {
-  position: absolute;
-  top: -80px;
-  left: 0;
-  z-index: 5;
-  background: transparent;
-}
 
-/* ------------------------------ HEADER SHAPES ------------------------------ */
+/* -------------- HEADER SHAPES -------------- */
 
 #fig-header {
   position: absolute;
@@ -380,7 +349,30 @@
   z-index: 0;
 }
 
-/* ------------------------------ GRADIENT TEXT ------------------------------ */
+/*TABLET*/
+@media screen and (min-width: 768px) {
+
+  /* ------------ HEADER ------------ */
+  #fig-header {
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    top: -4em;
+    right: -8em;
+    z-index: 0;
+  }
+
+  #header h1 {
+    padding-left: 1.5rem;
+    letter-spacing: -2px;
+    font-weight: 500;
+    padding-top: 3em;
+    width: 65%;
+    line-height: 1;
+  }
+}
+
+/* -------------- GRADIENT TEXT -------------- */
 
 .grad-text {
   background: -webkit-linear-gradient(-45deg, #1FA2FF, #11FFBD);
@@ -394,9 +386,82 @@
   position: relative;
 }
 
+/* ---------------------- TOP TEXT SECTION ---------------------- */
+#principal-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #160C40;
+  padding: 3rem 1rem;
+}
 
-/* ------------------------------ DIVISION BANNER SECTION ------------------------------ */
+#principal-top svg {
+  width: 200%;
+  padding-left: 1rem;
+}
 
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  #principal-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #160C40;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  #principal-top p {
+    padding-top: 2rem;
+  }
+
+  #principal-top svg {
+    width: 120%;
+    padding-left: 1rem;
+  }
+}
+
+/*DESK*/
+@media screen and (min-width: 990px) {
+  #principal-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #160C40;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  #principal-top svg {
+    width: 70%;
+    padding: 0 2rem;
+  }
+
+  #covid-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem !important;
+    line-height: 1.2;
+    text-align: right;
+    padding-right: 1rem;
+    margin: 0;
+    color: white;
+    padding-bottom: 2rem;
+  }
+}
+
+#covid-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: right;
+  padding-right: 1rem;
+  margin: 0;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+
+/* -------------------- MIDDLE TEXT SECTION -------------------- */
 #division {
   position: relative;
   height: 240px;
@@ -431,6 +496,7 @@
   opacity: 60%;
 }
 
+/*TABLET*/
 @media screen and (min-width: 768px) {
   #division {
     position: relative;
@@ -454,53 +520,9 @@
   }
 }
 
+/* -------------------  SERVICES SECTION ------------------- */
 
-/* ------------------------------ TEXT MIDDLE SECTION ------------------------------ */
-
-#principal-top {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: #160C40;
-}
-
-#principal-top svg {
-  width: 200%;
-  padding-left: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  #principal-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #160C40;
-  }
-
-  #principal-top p {
-    padding-top: 2rem;
-  }
-
-  #principal-top svg {
-    width: 150%;
-    padding-left: 1rem;
-  }
-}
-
-#covid-text {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.2;
-  text-align: right;
-  padding-right: 1rem;
-  margin: 0;
-  color: white;
-  padding-bottom: 2rem;
-}
-
-/* ------------------------------ TITLE SERVICES SECTION ------------------------------ */
-
+/* -------------- SERVICES TITLE -------------- */
 #main-title {
   text-align: center;
   line-height: 1;
@@ -511,6 +533,7 @@
   color: white;
 }
 
+/*TABLET*/
 @media screen and (min-width: 768px) {
   #main-title {
     text-align: center;
@@ -524,7 +547,7 @@
   }
 }
 
-/* ------------------------------ SERVICES CARDS ------------------------------ */
+/* ----------------- CARDS ----------------- */
 
 .services-section {
   position: relative;
@@ -540,48 +563,6 @@
   overflow: hidden;
   margin: 1em;
   padding: .5em;
-}
-
-#serv1 {
-  background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/limpiezas-moreira-limpieza-interioress-stock-k5x5.jpeg");
-  background-size: cover;
-}
-
-#serv2 {
-  background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/limpiezas-moreira-limpieza-oficinas-stock-y6v1.jpeg");
-  background-size: cover;
-}
-
-#serv3 {
-  background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/limpiezas-moreira-limpieza-vidrios-r2d9.jpeg");
-  background-size: cover;
-}
-
-#serv4 {
-  background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d1.jpeg");
-  background-size: cover;
-}
-
-#serv5 {
-  background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d4.jpeg");
-  background-size: cover;
-}
-
-#serv6 {
-  background:
-    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/limpiezas-moreira-limpieza-obra-h9c2.jpeg");
-  background-size: cover;
 }
 
 .card {
@@ -600,6 +581,7 @@
   color: white;
 }
 
+/*TABLET*/
 @media screen and (min-width: 768px) {
   .services-section {
     padding: 0 2rem;
@@ -662,21 +644,76 @@
   width: 80%;
   bottom: -140px;
   left: -75px;
-  z-index: 0;
+  z-index: 1;
 }
 
+/*TABLET*/
 @media screen and (min-width: 768px) {
   .container-fig-bottom {
     position: absolute;
     width: 80%;
     bottom: -200px;
     left: -200px;
-    z-index: 0;
+    z-index: 1;
   }
 }
 
-/* ------------------------------ SERVICE MODAL ------------------------------ */
+@media screen and (min-width: 990px) {
+  .container-fig-bottom {
+    position: absolute;
+    width: 75%;
+    bottom: -10%;
+    left: -25%;
+    z-index: 1;
+  }
+}
 
+/* ------------- SERVICE BLOCKS ------------- */
+
+#serv1 {
+  background:
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
+    url("/img/limpiezas-moreira-limpieza-interioress-stock-k5x5.jpeg");
+  background-size: cover;
+}
+
+#serv2 {
+  background:
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
+    url("/img/limpiezas-moreira-limpieza-oficinas-stock-y6v1.jpeg");
+  background-size: cover;
+}
+
+#serv3 {
+  background:
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
+    url("/img/limpiezas-moreira-limpieza-vidrios-r2d9.jpeg");
+  background-size: cover;
+}
+
+#serv4 {
+  background:
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
+    url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d1.jpeg");
+  background-size: cover;
+}
+
+#serv5 {
+  background:
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
+    url("/img/limpiezas-moreira-limpieza-exteriores-stock-r2d4.jpeg");
+  background-size: cover;
+}
+
+#serv6 {
+  background:
+    linear-gradient(290deg, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.8)),
+    url("/img/limpiezas-moreira-limpieza-obra-h9c2.jpeg");
+  background-size: cover;
+}
+
+
+/* -------------- SERVICE MODAL -------------- */
 .modal-header {
   background-color: #211261;
 }
@@ -741,19 +778,23 @@
   justify-content: center;
 }
 
-/* --------------------------------- CLIENTS SECTION --------------------------------- */
+/* ------------------------- WAVES CONTACT ------------------------- */
 
-#contactanos-bot {
-  background-color: #160C40;
-  width: 100%;
+#waves-contact svg {
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
-#clientes-title {
+/* ------------------------- CLIENTS SECTION ------------------------- */
+#clientsTitle {
   text-align: center;
   line-height: 1;
   letter-spacing: -1px;
   padding: 1rem;
   color: #211261;
+  z-index: 2;
+  position: relative;
 }
 
 .clients-section {
@@ -761,23 +802,103 @@
   width: 100%;
   height: 400px;
   padding: 1rem 0 .5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.clients-section .col-12 {
+  padding: 0 !important;
+}
+
+.clients-section::before {
+  content: "";
+  background-image: url('/img/bg-image-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.5;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .carousel-item {
   transform: scale(.5);
 }
 
+/*TABLET*/
 @media screen and (min-width: 768px) {
   .clients-section {
     height: 500px;
     padding: 0;
   }
+
+  .clients-section::before {
+    content: "";
+    background-image: url('/img/bg-image-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.5;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #clientsTitle {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -1px;
+    padding: 1rem;
+    color: #211261;
+    z-index: 2;
+    position: relative;
+  }
 }
 
-/* -------------------------------------- FOOTER -------------------------------------- */
+/*DESK*/
+@media screen and (min-width: 990px) {
+  .clients-section::before {
+    content: "";
+    background-image: url('/img/bg-image-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 125%;
+    top: -40%;
+    left: -15%;
+    opacity: 0.7;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #clientsTitle {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -1px;
+    padding: 1rem;
+    color: #211261;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+/* ----------------------------- FOOTER ----------------------------- */
 
 #footer-col {
   background-color: #3DAE2B !important;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -786,12 +907,6 @@
 
 #footer-col img {
   width: 50%;
-}
-
-@media screen and (min-width: 768px) {
-  #footer-col img {
-    width: 40%;
-  }
 }
 
 #footer-col p {
@@ -817,6 +932,7 @@
   align-items: center;
   width: 100%;
   padding: 2rem 0;
+  background-color: #3DAE2B;
 }
 
 #social-media-icons i {
@@ -832,8 +948,84 @@
 }
 
 #gomm-signature {
-  width: 35%;
-  padding-top: 1rem;
+  width: 100%;
+  padding: .6rem;
+  background-color: #3DAE2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gomm-signature svg {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  #footer-col img {
+    width: 40%;
+  }
+
+  #gomm-signature {
+    width: 100%;
+    padding: .6rem;
+    background-color: #3DAE2B;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #gomm-signature svg {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+/*DESK*/
+@media screen and (min-width: 990px) {
+  #footer-col {
+    background-color: #3DAE2B !important;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0 0 1rem 2rem;
+  }
+
+  #footer-col p {
+    padding-left: 1rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  #footer-col img {
+    width: 250px;
+  }
+
+  #contact-links {
+    background-color: #3DAE2B !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2rem 0 1rem 2rem;
+  }
+
+  #contact-links h3 {
+    color: white;
+    text-align: left;
+    padding: 5px 0;
+  }
+
+  #social-media-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    padding: 2rem 1rem 2rem 4rem;
+    background-color: #3DAE2B;
+  }
 
 }
 
@@ -843,43 +1035,3 @@
 /* -------------------------------------- TABLET -------------------------------------- */
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
-
-@media screen and (min-width: 600px) {
-
-
-  /* ------------------------------------------------------------------------------------ */
-  /* ------------------------------------------------------------------------------------ */
-  /* --------------------------------------- DESK --------------------------------------- */
-  /* ------------------------------------------------------------------------------------ */
-  /* ------------------------------------------------------------------------------------ */
-}
-
-@media screen and (min-width: 768px) {
-
-  /* ------------ HEADER ------------ */
-  #fig-header {
-    position: absolute;
-    width: 50%;
-    overflow: hidden;
-    top: -4em;
-    right: -8em;
-    z-index: 0;
-  }
-
-  #header h1 {
-    padding-left: 1.5rem;
-    letter-spacing: -2px;
-    font-weight: 500;
-    padding-top: 3em;
-    width: 65%;
-    line-height: 1;
-  }
-
-  /* ------------  ------------ */
-
-  /* ------------  ------------ */
-
-  /* ------------  ------------ */
-
-
-}
