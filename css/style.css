@@ -708,6 +708,7 @@
 
 #contactanos-bot {
   background-color: #160C40;
+  width:100%;
 }
 
 #clientes-title {
@@ -750,6 +751,12 @@
   width: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  #footer-col img {
+    width: 40%;
+  }
+}
+
 #footer-col p {
   text-align: center;
   padding-bottom: 2rem;
@@ -790,6 +797,7 @@
 #gomm-signature {
   width: 35%;
   padding-top: 1rem;
+
 }
 
 
