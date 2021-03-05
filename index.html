@@ -70,14 +70,11 @@
                     <i class="far fa-2x fa-envelope"></i>
                   </div>
                   <div class="nav-buttons">
-                    <li class="nav-item px-0">
-                      <a class="btn btn-grad" href="/servicios" role="button">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item px-0">
+                    <!-- <li class="nav-item px-0">
                       <a class="btn btn-grad" href="/nosotros" role="button">NOSOTROS</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item px-0">
-                      <a class="btn btn-grad" href="/blog" role="button">BLOG</a>
+                      <a class="btn btn-grad" href="https://limpiezasmoreira.ec/blog" role="button">BLOG</a>
                     </li>
                   </div>
                 </div>
@@ -88,14 +85,11 @@
                   <i id="doubleArrow" class="fas fa-2x fa-angle-double-down"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                  <li class="dropdown-item px-0">
-                    <a class="btn btn-grad" href="/servicios" role="button">SERVICIOS</a>
-                  </li>
-                  <li class="dropdown-item px-0">
+                  <!-- <li class="dropdown-item px-0">
                     <a class="btn btn-grad" href="/nosotros" role="button">NOSOTROS</a>
-                  </li>
+                  </li> -->
                   <li class="dropdown-item px-0">
-                    <a class="btn btn-grad" href="/blog" role="button">BLOG</a>
+                    <a class="btn btn-grad" href="https://limpiezasmoreira.ec/blog" role="button">BLOG</a>
                   </li>
                 </div>
               </div>
@@ -175,8 +169,11 @@
                     <circle class="fig-header-cls-8" cx="266.94" cy="326.61" r="72.58" />
                   </g>
                 </svg>
-                <a id="contactanos-top" class="btn btn-grad btn-lg btn-contactanos" href="/servicios" role="button"
-                  data-toggle="modal" data-target="#ModalCenter">CONTÁCTANOS</a>
+                <div id="buttons-header">
+                  <a id="servicios-top" class="btn btn-grad-bot btn-lg" href="#servicios-jump" role="button">SERVICIOS</a>
+                  <a id="contactanos-top" class="btn btn-grad btn-lg btn-contactanos" href="/servicios" role="button"
+                    data-toggle="modal" data-target="#ModalCenter">CONTÁCTANOS</a>
+                </div>
               </div>
               <!-- Modal -->
               <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle"
@@ -412,6 +409,7 @@
               </svg>
               <!-- SERVICES SECTION -->
               <div class="row services-section">
+                <a href="" id="servicios-jump"></a>
                 <!-- SERVICE CARD 1 -->
                 <div
                   class="col-12 col-md-6 col-lg-4 services text-center px-0 d-flex justify-content-center align-items-center">
@@ -1085,44 +1083,84 @@
                     class="grad-text">mayor fortaleza y orgullo</span><br><span style="font-size:1.2rem">y nos impulsan
                     a ser mejores</span></h2>
               </div>
-              <div class="row clients-section">
-                <div class="col-12">
-                  <!-- CAROUSEL -->
-                  <div id="clientsCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/img/cli_acesco-25xrr4.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-acesco">
+              <div class="container">
+                <div class="row clients-section">
+                  <div class="col-12">
+                    <!-- CAROUSEL -->
+                    <div id="clientsCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="/img/cli_acesco-25xrr4.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-acesco">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_fleischmann-rk253x.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-fleischmann">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_inec-9sjrex.png" class="d-block w-100" alt="cliente-limpiezas-moreira-inec">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_intaco-2nl3hj.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-intaco">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_ipac-kjqhgs.png" class="d-block w-100" alt="cliente-limpiezas-moreira-ipac">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_lhenriques-a3lshd.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-lhenriques">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_promesa-23csde.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-promesa">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_renteco-5sd3sd.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-rentec">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="/img/cli_supercom-46cser.png" class="d-block w-100"
+                            alt="cliente-limpiezas-moreira-supercom">
+                        </div>
                       </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_fleischmann-rk253x.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-fleischmann">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_inec-9sjrex.png" class="d-block w-100" alt="cliente-limpiezas-moreira-inec">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_intaco-2nl3hj.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-intaco">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_ipac-kjqhgs.png" class="d-block w-100" alt="cliente-limpiezas-moreira-ipac">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_lhenriques-a3lshd.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-lhenriques">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_promesa-23csde.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-promesa">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_renteco-5sd3sd.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-rentec">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/cli_supercom-46cser.png" class="d-block w-100"
-                          alt="cliente-limpiezas-moreira-supercom">
+                    </div>
+                    <div id="clientsList" class="container">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <img src="/img/cli_acesco-25xrr4.png"
+                            alt="cliente-limpiezas-moreira-acesco">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_fleischmann-rk253x.png"
+                            alt="cliente-limpiezas-moreira-fleischmann">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_inec-9sjrex.png" alt="cliente-limpiezas-moreira-inec">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_intaco-2nl3hj.png"
+                            alt="cliente-limpiezas-moreira-intaco">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_ipac-kjqhgs.png" alt="cliente-limpiezas-moreira-ipac">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_lhenriques-a3lshd.png"
+                            alt="cliente-limpiezas-moreira-lhenriques">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_promesa-23csde.png"
+                            alt="cliente-limpiezas-moreira-promesa">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_renteco-5sd3sd.png"
+                            alt="cliente-limpiezas-moreira-rentec">
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="/img/cli_supercom-46cser.png"
+                            alt="cliente-limpiezas-moreira-supercom">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1201,7 +1239,7 @@
         </path>
       </svg>
       <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="footer-col">
-        <a class="footer-brand" href="/">
+        <a class="footer-brand" href="#allPage">
           <img src="/svg/limpmor_logo-whitegreen.svg" alt="logo-limpiezas-moreira-std" srcset="">
         </a>
         <p>Los Vergeles Mz 158 Sl 19<br>Guayaquil, Ecuador</p>

@@ -40,6 +40,7 @@
 
 #allPage {
   background: linear-gradient(0deg, rgba(33, 18, 97, 1) 0%, rgba(48, 26, 142, 1) 34%, rgba(33, 92, 158, 1) 72%, rgba(34, 187, 237, 0.8309698879551821) 100%);
+  scroll-margin-top: 1em;
 }
 
 .btn:focus,
@@ -61,7 +62,8 @@ svg {
 .navbar {
   background: linear-gradient(135deg, rgba(33, 18, 97, 1) 15%, rgba(33, 92, 158, 1) 81%);
   border-radius: 15px;
-  box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 20px 2px rgba(0, 0, 0, 0.2);
+  scroll-margin-top: 1em;
 }
 
 .navbar-toggler:focus,
@@ -293,11 +295,21 @@ svg {
   text-decoration: none;
 }
 
+/* ------------- HEADER BUTTONS ------------- */
+
+#buttons-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* ------------- CONTACT BUTTONS ------------- */
 #contactanos-top {
-  margin: 2rem 0 2rem 1.5rem;
-  width: 50%;
+  width: 40%;
   position: relative;
+  font-size: 1rem;
 }
 
 #close-bot {
@@ -314,11 +326,23 @@ svg {
   width: 100%;
 }
 
+#servicios-top {
+  background-image: linear-gradient(to right, #AAFFA9 0%, #11FFBD 51%, #AAFFA9 100%);
+  margin: 2rem 1rem 2rem 1.5rem;
+  position: relative;
+  width: 30%;
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 990px) {
   #contactanos-top {
-    margin: 2rem 0 2rem 1.5rem;
+    margin: 2rem 1rem 2rem 0;
     width: 30%;
-    position: relative;
+  }
+
+  #servicios-top {
+    margin: 2rem 1rem 2rem 1.5rem;
+    width: 20%;
   }
 }
 
@@ -401,6 +425,7 @@ svg {
 #header {
   position: relative;
   height: 600px;
+  scroll-margin-top: 1em;
 }
 
 #header h1 {
@@ -1021,12 +1046,22 @@ svg {
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 990px) and (max-width: 1280px) {
   .container-fig-bottom {
     position: absolute;
     width: 75%;
     bottom: -10%;
     left: -25%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-fig-bottom {
+    position: absolute;
+    width: 60%;
+    bottom: -10%;
+    left: -15%;
     z-index: 1;
   }
 }
@@ -1213,6 +1248,10 @@ svg {
   height: auto;
 }
 
+#clientsList {
+  display: none;
+}
+
 /*TABLET*/
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .clients-section {
@@ -1237,14 +1276,28 @@ svg {
     margin: 0;
   }
 
-  #clientsTitle {
-    text-align: center;
-    line-height: 1;
-    letter-spacing: -1px;
-    padding: 1rem;
-    color: #211261;
-    z-index: 2;
-    position: relative;
+  #clientsTitle,
+  #clientsTitle span {
+    font-size: 1.8rem !important;
+  }
+
+  #clientsTitle .grad-text {
+    font-size: 2.5rem !important;
+  }
+
+  .carousel-inner {
+    padding: 2rem 3rem 1rem 3rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-item img {
+    width: 70%;
+    height: auto;
+  }
+
+  #clientsList {
+    display: none;
   }
 }
 
@@ -1259,36 +1312,95 @@ svg {
     width: 125%;
     top: -40%;
     left: -8%;
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: 0;
     padding: 0;
     margin: 0;
   }
 
-  #clientsTitle {
-    font-size: 2rem !important;
+  .clients-section {
+    padding-top: 2rem;
+    height: 650px;
   }
 
-  .carousel-inner {
-    width: 30%;
-    height: auto;
+  #clientsTitle,
+  #clientsTitle span {
+    font-size: 1.8rem !important;
   }
 
-  .carousel-item img {
-    width: 75%;
-    height: auto;
+  #clientsTitle .grad-text {
+    font-size: 2.5rem !important;
+  }
+
+  #clientsCarousel {
+    display: none;
+  }
+
+  #clientsList {
+    display:block;
+  }
+
+  #clientsList .row {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 7rem;
+  }
+
+  #clientsList img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  #clientsTitle {
-    text-align: center;
-    line-height: 1;
-    letter-spacing: -1px;
-    padding: 1rem;
-    color: #211261;
-    z-index: 2;
-    position: relative;
+  .clients-section::before {
+    content: "";
+    background-image: url('/img/limpMor-bg-bott-698102901.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: -25%;
+    left: 15%;
+    opacity: 0.5;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .clients-section {
+    padding-top: 2rem;
+    height: 600px;
+  }
+
+  #clientsTitle,
+  #clientsTitle span {
+    font-size: 1.8rem !important;
+  }
+
+  #clientsTitle .grad-text {
+    font-size: 2.5rem !important;
+  }
+
+  #clientsCarousel {
+    display: none;
+  }
+
+  #clientsList {
+    display:block;
+  }
+
+  #clientsList .row {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 7rem;
+  }
+
+  #clientsList img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
