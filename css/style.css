@@ -78,16 +78,81 @@
 
 .navbar-collapse .nav-buttons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .nav-item .btn {
-  width: 150px;
+  width: 45vw;
   margin: 5px 10px 10px 10px;
   border-radius: 10px;
   border: 0;
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .navbar-collapse .navbar-nav {
+    justify-content: center;
+  }
+
+  .navbar-collapse .nav-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .nav-item .btn {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline;
+    margin: 0 20px 0 30px;
+  }
+
+  #dropdownBtn:active,
+  #dropdownBtn:focus {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .dropdown-menu-right {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 30px 3px rgba(65, 65, 65, 0.6);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .navbar-collapse .navbar-nav {
+    justify-content: center;
+  }
+
+  .navbar-collapse .nav-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .nav-item .btn {
+    width: 15vw;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: 0;
+  }
 }
 
 /* ------------- DROPDOWN ARROWS ------------- */
@@ -105,11 +170,19 @@
 }
 
 /*---------------- CONTACT ICONS --------------- */
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .contact-icons .fab,
 .contact-icons .far {
   color: white;
-  margin: 0px 15px 0px 15px;
-  transform: scale(1.2);
+  margin: 20px 0 20px 0;
+  transform: scale(2);
 }
 
 .contact-icons .fab:hover,
@@ -126,6 +199,20 @@
   color: #59FF3F;
   transition: 300ms ease-in;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-icons .fab,
+  .contact-icons .far {
+    color: white;
+    margin: 0 20px 0 20px;
+    transform: scale(1.2);
+  }
 }
 
 /* ------------ GRADIENT BUTTONS ------------ */
@@ -415,13 +502,13 @@
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
   #fig-header {
     position: absolute;
     width: 50%;
     overflow: hidden;
     top: -4em;
-    right: -8em;
+    right: -5em;
     z-index: 0;
   }
 
@@ -487,7 +574,7 @@
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
   #top-text {
     position: relative;
     padding: 4rem 0 0 0;
@@ -496,23 +583,25 @@
 
   #top-svg {
     position: absolute;
-    top: -88%;
+    top: -10rem;
   }
 
   #principal-top {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #160C40;
     padding: 0 1rem 2rem 1rem;
   }
 
   #principal-top p {
-    padding-top: 2rem;
+    text-align: left !important;
+    padding-left: 30px;
   }
 
   #principal-top svg {
-    width: 120%;
+    width: 75%;
     padding-left: 1rem;
   }
 }
@@ -1204,8 +1293,14 @@
   }
 }
 
-/* ------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------ */
-/* -------------------------------------- TABLET -------------------------------------- */
-/* ------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------ */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+}
+
+@media screen and (min-width: 990px) and (max-width:1280px) {
+
+}
+
+@media screen and (min-width: 1280px) {
+
+}
